@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ExternalLink, FolderGit2 } from 'lucide-react';
 import { PROJECTS, type Project } from '../data/portfolioData';
 
-const FILTERS: Array<'All' | Project['category']> = ['All', 'React', 'Next.js', 'UI / Data'];
+const FILTERS: Array<'All' | Project['category']> = ['All', 'React', 'HTML / CSS / JS'];
 
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState<'All' | Project['category']>('All');
